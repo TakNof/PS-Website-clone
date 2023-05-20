@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./media/PS-title.png">
+    <title>Sitio no oficial de PlayStation</title>
+</head>
+<body>
+    <script src ="./script.js"></script> 
+    <div class="header-placeholder">
+        <!---Sony logo--->
+        <header>
+            <div class="sony-logo-div">
+                <img class="sony-logo" src="./media/sony-logo.png" alt="">
+            </div>
+        </header>
+    </div>
+
+    <!-- navigation menu -->
+    <div class="menu-div">
+        <div class="main-menu-div">
+            <nav class="menu-nav">
+                <ul class="menu-main-ul">
+                    <li>
+                        <div class="ps-logo-div">
+                            <img class="ps-logo" src="./media/PS-logo-nav-menu.jpeg" alt="">
+                        </div>
+                    </li>
+                                    
+                    <li class="games-items-option" onclick="deployMenu(this)"><b>Games</b></li>
+            
+                    <li class="hardware-items-option" onclick="deployMenu(this)"><b>Hardware</b></li>
+            
+                    <li class="services-items-option" onclick="deployMenu(this)"><b>Services</b></li>
+            
+                    <li class="news-items-option" onclick="deployMenu(this)"><b>News</b></li>
+            
+                    <li class="shop-items-option" onclick="deployMenu(this)"><b>Shop</b></li>
+            
+                    <li class="support-items-option" onclick="deployMenu(this)"><b>Support</b></li>
+
+                    <li style="float:right"><input class="search-bar" type="text" placeholder="Search.."></li>
+
+                    <li style="float:right"><button class="sign-in-button"><b>Sign in</b></button></li>
+                    
+                    
+                </ul>   
+            </nav>
+        </div>           
+
+        <div class="deployable-menu close">
+            <div class="games-items" style="display: none">
+                <ul class="ul-ps-logos">
+                    
+                    <li><img src="" alt=""><b>PS5</b></li>
+                    <li><img src="" alt=""><b>PS4</b></li>
+                    <li><img src="" alt=""><b>PS VR2</b></li>
+                    <li><img src="" alt=""><b>PS Plus</b></li>
+                    <li><img src="" alt=""><b>Buy Games</b></li>
+                   </ul>
+
+                <ul class="ul-ps-categories">
+                    <li><b>PlayStation Indies</b></li>
+                    <li><b>PS4 games on PS5</b></li>
+                    <li><b>Free to Play</b></li>
+                    <li><b>PlayStation games on PC</b></li>
+                    <li><b>Deals & Offers</b></li>
+                </ul>
+            </div>
+            
+            <div class="hardware-items " style="display: none">
+                <ul class="ul-ps-logos">
+                    <li><img src="" alt=""><b>PS5</b></li>
+                    <li><img src="" alt=""><b>PS4</b></li>
+                    <li><img src="" alt=""><b>PS VR2</b></li>
+                </ul>
+
+                <ul class="ul-ps-categories">
+                    <li><b>DualSense wireless controller</b></li>
+                    <li><b>PULSE 3D wireless headset</b></li>
+                    <li><b>DUALSHOCK 4 wireless controller</b></li>
+                    <li><b>PS5 & PS4 accesories</b></li>
+                    <li><b>PlayStation VR</b></li>
+                </ul>
+            </div>
+
+            <div class="services-items" style="display: none">
+                <ul class="ul-ps-logos">
+                    <li><img src="" alt=""><b>PS Plus</b></li>
+                    <li><img src="" alt=""><b>PS Stars</b></li>
+                </ul>
+
+                <ul class="ul-ps-categories">
+                    <li><b>PS5 entretainment</b></li>
+                    <li><b>PS4 entretainment</b></li>
+                </ul>
+            </div>
+
+            <div class="news-items" style="display: none">
+                <ul class="ul-ps-logos">
+                    <li><img src="" alt=""><b>PS Blog</b></li>
+                    <li><img src="" alt=""><b>This Month on PlayStation</b></li>
+                </ul>
+
+                <ul class="ul-ps-categories">
+                    <li><b>Competition Center</b></li>
+                    <li><b>Accesibility</b></li>
+                    <li><b>Privacy & Safety</b></li>
+                </ul>
+            </div>
+
+            <div class="shop-items" style="display: none">
+                <ul class="ul-ps-logos">
+                    <li><img src="" alt=""><b>Hardware and Discs</b></li>
+                    <li><img src="" alt=""><b>Digital Games and Services</b></li>
+                    <li><img src="" alt=""><b>Official Merchandise</b></li>
+                </ul>
+
+                <ul class="ul-ps-categories">
+                    <li><b>Buy a PS5</b></li>
+                    <li><b>New Releases</b></li>
+                    <li><b>Latest discounts</b></li>
+                    <li><b>Buy gift card</b></li>
+                    <li><b>Subscribe to PS Plus</b></li>
+                </ul>
+            </div>
+
+            <div class="support-items" style="display: none">
+                <ul class="ul-ps-logos">
+                    <li><img src="" alt=""><b>Support</b></li>
+                    <li><img src="" alt=""><b>PSN Status</b></li>
+                </ul>
+
+                <ul class="ul-ps-categories">
+                    <li><b>Account</b></li>
+                    <li><b>Store</b></li>
+                    <li><b>Subscriptions</b></li>
+                    <li><b>Games</b></li>
+                    <li><b>Hardware</b></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- carrousel 1 -->
+    <div class="slider-frame">
+        <ul>
+            <li><img src="./media/carrusel-1.jpg" alt=""></li>
+            <li><img src="./media/carrusel-2.jpg" alt=""></li>
+            <li><img src="./media/carrusel-3.jpg" alt=""></li>
+            <li><img src="./media/carrusel-4.jpg" alt=""></li>
+            <li><img src="./media/carrusel-5.jpg" alt=""></li>
+            <li><img src="./media/carrusel-6.jpg" alt=""></li>
+        </ul>
+    </div>
+
+    <div class="carrousel-1-images">
+        <ul class="ul-carrousel-1-images">
+            <li id="li1"><img src="./media/carrusel-1.jpg" alt=""></li>
+            <li id="li2"><img src="./media/carrusel-2.jpg" alt=""></li>
+            <li id="li3"><img src="./media/carrusel-3.jpg" alt=""></li>
+            <li id="li4"><img src="./media/carrusel-4.jpg" alt=""></li>
+            <li id="li5"><img src="./media/carrusel-5.jpg" alt=""></li>
+            <li id="li6"><img src="./media/carrusel-6.jpg" alt=""></li>
+        </ul>
+    </div>
+    
+    <!-- carrousel 2 -->
+    <div class="carrousel-2">
+        <div class="carrousel-up">
+            <!-- The up section is divided in two, part info, part image -->
+            <!-- <div class="">
+                <ul>
+                    <li>
+                <h2>
+                    Title
+                </h2>
+                <p>
+                    Info
+                </p>
+
+                <button class="learn-more-button"><a href=""><b>Learn more</b></a></button>
+                <button class="buy-now-button"><a href=""><b>Buy Now</b></a></button>
+            </div>
+            
+            <div class="carrousel-img">
+                <img src="" alt="">
+            </div>
+        </li>
+        </div>
+    </div> -->
+        
+    <div class="mid-section">
+        <div class="mid-section-up">
+            <div class="mid-section-up-info">
+                <img id="ps-plus-logo" src="./media/ps-plus-logo.png" alt="">
+                <br>
+                <br>  
+                <p>
+                    Enhance your PlayStation experience with access to online multiplayer, monthly games, exclusive discounts and more.
+                </p>
+                <br>
+                <br>
+                <button class="explore-button"><b>Explore Playstation Plus</b></button>
+            </div>
+            <img id="juegosPS" src="./media/Juegos-primera-seccion.png" alt="">
+        </div>
+
+        <div class="mid-section-middle">
+            <div class="mid-section-middle-upper">
+                
+                <h1>
+                    THIS MONTH 
+                </h1>
+                <h1>ON PLAYSTATION</h1>
+                <br>
+                <p>
+                    Check out this month's biggest releases along with dedicated features, guides and more.
+                </p>
+                <br>
+                <button class="find-out-more-button"><b>Find out more</b></button>
+            </div>
+
+            <div class="mid-section-middle-bottom">
+                <ul class="ul-mid-section-middle-bottom">
+                    <li>
+                        <img src="./media/VR2-games.jpg" alt=""> 
+                        <b><h4>10 incredible games to kickstart <br> your PS VR2 exprerience</h4></b>
+                    </li>
+                    
+                    <li>
+                        <img src="./media/carrusel-1.jpg" alt="">
+                        <b><h4>Why Lightfall is the prefect time <br> to jump into Destiny 2</h4></b>
+                    </li>
+
+                    <li>
+                        <img src="./media/Game-catalog.jpg" alt="">
+                        <b><h4>Couch multiplayer games to enjoy <br> on PS  Plus Game Catalog</h4></b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mid-section-down">
+            <div class="mid-section-down-info">
+                <img id="GOWR-logo" src="./media/GOWR-logo.png" alt="">
+                <br><br>
+                <h1>
+                    The Norse saga continues
+                </h1>
+
+                <p>
+                    Embark on an epic and heartfelt journey as Kratos and Atreus struggle with holding on and letting go, available now on PS4 & PS5
+                </p>
+                <br><br>
+                <button class="buy-now-button"><b>Buy Now</b></button>
+            </div>
+        </div>
+    </div>    
+
+
+    
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    <footer>
+        <img id="play-logo" src="./media/Play-logo.png" alt="">
+        <br><br>
+        <p id="copy">©2023 Sony Interactive Entertainment LLC</p>
+        <p id="copy">All content, games titles, trade names and/or trade dress, trademarks, artwork and associated imagery are trademarks and/or copyright material of their respective owners. All rights reserved. More info</p>
+        <br>
+    </footer>
+    
+</body>
+</html>

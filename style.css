@@ -1,0 +1,455 @@
+body{
+    height: 100%;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: black;
+}
+
+.sony-logo-div{
+    padding: 0.45% 0%;
+}
+
+.sony-logo{
+    width: 78px;
+    height: 14px;
+    position: relative;
+    left: 99.5%;
+    -ms-transform: translate(-100%, 0%);
+    transform: translate(-100%, 0%);
+}
+
+.ps-logo{
+    width: auto;
+    height: 34px;
+    left: 28px;
+    top: 50%;
+    -ms-transform: translate(0%, -10%);
+    transform: translate(0%, -10%);
+
+}
+
+.menu-div{
+    position: sticky;
+}
+
+.menu-main-ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu-main-ul li{
+    float: left;
+    padding: 16px 22px;
+}
+
+.menu-main-ul li:hover{
+    transition: all 0.5s ease 0s;
+    color:rgb(9, 108, 221);
+}
+
+button{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;    
+}
+
+.sign-in-button{
+    background-color:  rgb(9, 108, 221);
+    color: white;
+    width: 80px;
+    height: 25px;
+}
+
+.sign-in-button:hover{
+    background-color: rgb(8, 68, 179);
+}
+
+.buy-now-button{
+    color: white;
+    background-color: rgb(255, 94, 0);
+    width: 80px;
+    height: 30px;
+}
+
+.buy-now-button:hover{
+    background-color: rgb(189, 73, 7);
+    outline-offset: 2px;
+    outline: 2px solid rgb(189, 73, 7);
+    transition: all 50ms ease 50ms;
+}
+
+.learn-more-button{
+    background-color:  rgb(9, 108, 221);
+    color: white;
+    width: 90px;
+    height: 30px;
+}
+
+.learn-more-button:hover{
+    transition: all 50ms ease 50ms;
+    background-color: rgb(8, 68, 179);
+    outline-offset: 2px;
+    outline: 2px solid rgb(8, 68, 179);
+    
+}
+
+.explore-button{
+    background-color:  rgb(9, 108, 221);
+    color: white;
+    width: 200px;
+    height: 30px;
+}
+
+.explore-button:hover{
+    background-color: rgb(8, 68, 179);
+    outline-offset: 2px;
+    outline: 2px solid rgb(8, 68, 179);
+    transition: all 50ms ease 50ms;
+}
+
+.find-out-more-button{
+    background-color:  white;
+    width: 120px;
+    height: 30px;
+}
+
+.find-out-more-button:hover{
+    transition: all 50ms ease 50ms;
+    background-color: white;
+    outline-offset: 2px;
+    outline: 2px solid white;
+}
+
+.deployable-menu{
+    height: 0%;
+}
+
+.box-shadow{
+    box-shadow: 0px 10px 15px 4px grey;
+}
+
+.games-items, .hardware-items, .services-items, .news-items, .shop-items, .support-items{
+    position: relative;
+    left: 50%;
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+}
+
+.change-font-color-menu{
+    transition: all 0.5s ease 0s;
+    color:rgb(9, 108, 221);
+
+}
+
+.ul-ps-logos, .ul-ps-categories, .ul-carrousel-1-images, .ul-mid-section-middle-bottom{
+    justify-content: center;
+    display: flex;
+}
+
+.ul-ps-logos{
+    padding: 20px 0px;
+}
+
+.ul-ps-categories{
+    border-top: 2px solid rgba(128, 128, 128, 0.404);
+    padding: 20px 0px;
+}
+
+.ul-ps-logos li, .ul-ps-categories li{
+    display: block;
+    flex-grow: 0.05;
+}
+
+.ul-ps-categories > li:hover{
+    color:rgb(9, 108, 221);
+}
+
+.deploy{
+    display: block;
+    animation: deploy-animation 1s;
+    transition: all 0.5s ease 100ms;
+}
+
+.close{
+    display: block;
+    animation: close-animation 1s;
+    transition: all 0.5s ease 100ms;
+}
+
+.carrousel-1-images{
+    position: relative;
+    margin: 30px 0px;
+    width: 100%;
+}
+
+.carrousel-1-images li> img{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carrousel-1-images li{
+    padding: 0px 0.3%;
+}
+
+.ul-carrousel-1-images img{
+    opacity: 1;
+}
+
+.ul-carrousel-1-images li >img:not(:hover){
+    opacity: 0.6;
+    transition: all 0.5s ease 100ms;
+}
+
+.ul-carrousel-1-images li >img:hover{
+    -ms-transform: translate(0%, -10%);
+    transform: translate(0%, -10%);
+    box-shadow: 0px 10px 15px 4px grey;
+    transition: all 0.5s ease 100ms;
+}
+
+#ps-plus-logo{
+    height: 60%;
+}
+
+.mid-section-up{
+    background-image: url(./media/Fondo-PS-Plus.jpg);
+    background-size: 100%;
+    height: 450px;
+}
+.mid-section-middle{
+    background-image: url(./media/Fondo-RE.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #26254f;
+    height: 700px;
+}
+.mid-section-down{
+    background-image: url(./media/Fondo-GOW.jpg);
+    background-size: cover;
+    height: 550px;
+}
+
+.mid-section-up-info{
+    position: relative;
+    left: 16%;
+    top: 30%;
+    height: 100px;
+    width: 400px;
+    font-size: 12px;
+}
+
+.mid-section-middle-upper{
+    position: relative;
+    left: 13%;
+    top: 10%;
+    height: 100px;
+    width: 400px;
+    font-size: 15px;
+    color: white;
+}
+
+.mid-section-middle-bottom{
+    position: relative;
+    top: 30%;
+}
+
+.ul-mid-section-middle-bottom li{
+    padding: 0px 2%;
+    color: white;
+}
+
+.ul-mid-section-middle-bottom li > img{
+    width: 400px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0px 5px 5px 2px rgb(24, 24, 24);
+    margin: 40px 0px;
+    transition: all 200ms ease 100ms;
+}
+
+.ul-mid-section-middle-bottom li > img:hover{
+    width: 420px;
+    height: auto;
+    box-shadow: 0px 10px 15px 4px rgb(24, 24, 24);
+    transition: all 200ms ease 100ms;
+}
+
+.mid-section-down-info{
+    position: relative;
+    left: 13%;
+    top: 40%;
+    height: 100px;
+    width: 400px;
+    font-size: 12px;
+    color: white;
+}
+#GOWR-logo{
+    height: 90%;
+}
+#juegosPS{
+    position: relative;
+    left: 58%;
+    top: -10%;
+}
+#play-logo{
+    position: relative;
+    height: 50px;
+    left: 5%;
+    margin-top: 10px;
+}
+#copy{
+    position: relative;
+    left: 5%;
+    font-size: 15px;
+}
+footer{
+    background-color: #00439c;
+    color: white;
+    padding: 5px;
+}
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    transition: all 0.5s ease 0s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: lato;   
+}
+
+.slider-frame{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;   
+    
+}
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 600%;
+    animation: slide 16s infinite;
+}
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+.slider-frame img{
+    width: 100%;
+    height: auto;
+}
+
+/* .slider-frame > img{
+    width: 100%;
+    height: auto;
+} */
+
+/* .slider-frame2{
+    height: 620px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    
+}
+.slider-frame2 ul{
+    display: flex;
+    padding: 0;
+    width: 600%;
+    animation: slide 16s infinite;
+}
+.slider-frame2 li{
+    list-style: none;
+    width: 100%;
+}
+.slider-frame2 img{
+    width: 100%;
+} */
+
+@keyframes slide {
+    0%{margin-left: 0%;}
+    11.6%{margin-left: 0%;}
+
+    16.6%{margin-left: -100%;}
+    28.2%{margin-left: -100%;}
+
+    33.2%{margin-left: -200%;}
+    44.8%{margin-left: -200%;}
+
+    49.8%{margin-left: -300%;}
+    61.4%{margin-left: -300%;}
+    
+    66.4%{margin-left: -400%;}
+    78%{margin-left: -400%;}
+
+    83%{margin-left: -500%;}
+    94.6%{margin-left: -500%;}
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }    
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+    }    
+
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes deploy-animation {
+    from{
+        bottom: 150%;
+        -ms-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+    }
+
+    to{
+        bottom: 0%;
+        -ms-transform: translate(0%, -0%);
+        transform: translate(0%, -0%);
+    }
+}
+
+@keyframes close-animation{
+    from{
+        bottom: 0%;
+        -ms-transform: translate(0%, -0%);
+        transform: translate(0%, -0%);
+    }
+
+    to{
+        bottom: 150%;
+        -ms-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+    }   
+}
